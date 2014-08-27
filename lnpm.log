@@ -1,0 +1,14 @@
+lnpm started
+Wed Aug 27 13:46:43 PDT 2014
+[1734] paramcount2
+[1735] params=express modparam=
+[1;34m[1730] Swtich Statement Begins 1=copy[0m
+[1;34m[1701] copypkg() 1=express 2= [0m
+[1;34m[279] setpackage() pkgin=express  [0m
+[1;34m[580] getPackageCount() pkgin=express  [0m
+[1;34m[260] splitdirnames()  [0m
+[294] pkgcount=2 pkgin=express found locally
+[1702] Selected version=4.8.5 path="/data/Projects/node_modules/express--4.8.5"
+[1708] sl for express exists, deleting
+[1713] Deleted link, now copying local directory as express
+[1715] pkgpath="/data/Projects/node_modules/express--4.8.5" cwd=/data/Projects/soundplayer pkgin=express pkgver= 4.8.5
