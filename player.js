@@ -1,9 +1,16 @@
-'use strict';
+function player() {
+  var playlist = [];
+  var playing = {};
+  var controls = {};
+  var ui = {};
 
-  exports.test = function() {
-    console.log('this is a test');
-  };
-
-  exports.test2 = function() {
-    console.log('this is a test also');
-  };
+  function makeUi(){
+    ui.player = document.getElementById('player');
+    ui.currentTrack = document.getElementById('currentTrack');
+    ui.npImg = document.getElementById('npImg');
+    ui.trackInfo = document.getElementById('trackInfo');
+    ui.musicFile = document.getElementById('musicFile');
+    ui.playBar = document.getElementById('playBar');
+    ui.playList = document.getElementById('playList');
+  }
+}

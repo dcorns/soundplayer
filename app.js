@@ -1,10 +1,10 @@
 'use strict';
 //Declare server.js as a function [ module.exports = exports = function ]
 var server = require('./server.js');
-var player = require('./player.js');
+var router = require('./router.js');
 
 server();
 
-player.test();
+router.test();
 
-player.test2();
+router.test2();
