@@ -1,14 +1,24 @@
 lnpm started
-Wed Aug 27 13:46:43 PDT 2014
-[1734] paramcount2
-[1735] params=express modparam=
-[1;34m[1730] Swtich Statement Begins 1=copy[0m
-[1;34m[1701] copypkg() 1=express 2= [0m
-[1;34m[279] setpackage() pkgin=express  [0m
-[1;34m[580] getPackageCount() pkgin=express  [0m
+Wed Aug 27 14:07:20 PDT 2014
+[1734] paramcount1
+[1735] params= modparam=
+[1;34m[1730] Swtich Statement Begins 1=install[0m
+[252] check3() modparam=
+[1;34m[219] install() pkgin=[0m
+[1;34m[279] setpackage() pkgin=  [0m
+[1;34m[598] convert()  [0m
+[1;34m[483] parcepkgjson()[0m
+[1;34m[536] makeDepList() depobj[@]="dependencies": { "express": "4.8.5" }  [0m
+[1;34m[551] makeDevList()[0m
+[1;34m[741] setVersion() "express" "4.8.5" [0m
+[1;34m[724] setPackageCount()express  [0m
 [1;34m[260] splitdirnames()  [0m
-[294] pkgcount=2 pkgin=express found locally
-[1702] Selected version=4.8.5 path="/data/Projects/node_modules/express--4.8.5"
-[1708] sl for express exists, deleting
-[1713] Deleted link, now copying local directory as express
-[1715] pkgpath="/data/Projects/node_modules/express--4.8.5" cwd=/data/Projects/soundplayer pkgin=express pkgver= 4.8.5
+[1;34m[1240] exactVersion()express 4.8.5 [0m
+[1;34m[1697] isLocal() pkg=express ver=4.8.5 
+[1;34m[260] splitdirnames()  [0m
+[1239] loc=1
+[784] result=4.8.5 "4.8.5" 
+[1;34m[1697] isLocal() pkg=express ver=4.8.5 
+[1;34m[260] splitdirnames()  [0m
+[786] versionLocal1 "4.8.5" 
+[604] vrs=4.8.5
