@@ -53,15 +53,28 @@ function makeplayer() {
 
 
     //Make test playlist
-    player.playList.push({file:'api/music/Cracker Blues - Bolero maldito.mp3', graphic: 'api/graphics/16999373', title: 'Cracker Blues'});
+    player.playlist.push({file:'api/music/Cracker Blues - Bolero maldito.mp3', graphic: 'api/graphics/16999373.jpg', title: 'Bolero maldito'});
+    player.playlist.push({file:'api/music/Enforcer - Mesmerized By Fire.mp3', graphic: 'api/graphics/81616077.png', title: 'Mesmerized By Fire'});
+    player.playlist.push({file:'api/music/Hans Theessink - Johnny & The Devil.mp3', graphic: 'api/graphics/91787079.jpg', title: 'Johnny & The Devil'});
+    player.playlist.push({file:'api/music/Texas in July - 1000 Lies.mp3', graphic: 'api/graphics/95688129.jpg', title: '1000 Lies'});
+    player.playlist.push({file:'api/music/Textures - Singularity', graphic: '', title: 'Singularity'});
 
-    player.musicFile.src = player.playList[0].file;
-    player.trackInfo.value = player.playList[0].title;
-    player.npImg.src = player.playlist[0].graphic;
+    player.ui.musicFile.src = player.playlist[0].file;
+    player.ui.trackInfo.value = player.playlist[0].title;
+    player.ui.npImg.src = player.playlist[0].graphic;
 
   })();
 
+  function populateUiPlaylist(playListIn, playListOut){
+    var list = '';
+    for (var i=0; i < playListIn.length; i++){
+      list = list + "<li id='ls"+i+"' "+playListIn[i].title+"</li>"
+    }
+    console.log(list);
+    playListOut.innerHTML = list;
+  }
 
+  populateUiPlaylist(player.playlist, player.ui.playList);
 
 return player;
 }
