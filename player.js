@@ -25,8 +25,6 @@ function makeplayer() {
     controls.playTrack.onclick = function(){controls.clicked(this)};
     controls.prevTrack = document.getElementById('prevTrack');
     controls.prevTrack.onclick = function(){controls.clicked(this)};
-    controls.stopTrack = document.getElementById('stopTrack');
-    controls.stopTrack.onclick = function(){controls.clicked(this)};
 
     controls.clicked = function (e){
       var id = e.id;
@@ -41,7 +39,12 @@ function makeplayer() {
           alert(id+'pressed');
           break;
       }
-    }
+    };
+
+    var playing = player.playing;
+    playing.trackLength = document.getElementById('lblDuration');
+    playing.npImg = document.getElementById('npImg');
+
   })();
 
 
