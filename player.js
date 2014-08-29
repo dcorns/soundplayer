@@ -31,9 +31,13 @@ function makeplayer() {
       switch (id){
         case 'playTrack':
           ui.currentTrack.play();
+          controls.playTrack.className = 'turnOff';
+          controls.pauseTrack.className = '';
           break;
         case 'pauseTrack':
           ui.currentTrack.pause();
+          controls.playTrack.className = '';
+          controls.pauseTrack.className = 'turnOff';
           break;
         default:
           alert(id+'pressed');
@@ -45,6 +49,7 @@ function makeplayer() {
     playing.trackLength = document.getElementById('lblDuration');
     playing.npImg = document.getElementById('npImg');
 
+    controls.pauseTrack.className = 'turnOff';
   })();
 
 
