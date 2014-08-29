@@ -1,3 +1,11 @@
 .turnOff{
     display: none;
 }
+
+.clPlayer{
+    border-width: 5px;
+    border-color: crimson;
+    border-style: inset;
+    width: 350px;
+    height: 500px;
+}
