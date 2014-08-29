@@ -50,6 +50,15 @@ function makeplayer() {
     playing.npImg = document.getElementById('npImg');
 
     controls.pauseTrack.className = 'turnOff';
+
+
+    //Make test playlist
+    player.playList.push({file:'api/music/Cracker Blues - Bolero maldito.mp3', graphic: 'api/graphics/16999373', title: 'Cracker Blues'});
+
+    player.musicFile.src = player.playList[0].file;
+    player.trackInfo.value = player.playList[0].title;
+    player.npImg.src = player.playlist[0].graphic;
+
   })();
 
 
