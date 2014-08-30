@@ -68,7 +68,7 @@ function makeplayer() {
   function populateUiPlaylist(playListIn, playListOut){
     var list = '';
     for (var i=0; i < playListIn.length; i++){
-      list = list + "<li id='ls"+i+"' "+playListIn[i].title+"</li>"
+      list = list + "<li id='ls"+i+"'>"+playListIn[i].title+"</li>"
     }
     console.log(list);
     playListOut.innerHTML = list;
