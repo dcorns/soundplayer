@@ -15,6 +15,7 @@ function makeplayer() {
     ui.musicFile = document.getElementById('musicFile');
     ui.playBar = document.getElementById('playBar');
     ui.playList = document.getElementById('playList');
+    ui.playListItems = [];
 
     var controls = player.controls;
     controls.nextTrack = document.getElementById('nextTrack');
@@ -68,7 +69,7 @@ function makeplayer() {
   function populateUiPlaylist(playListIn, playListOut){
     var list = '';
     for (var i=0; i < playListIn.length; i++){
-      list = list + "<li id='ls"+i+"'>"+playListIn[i].title+"</li>"
+      list = list + "<li id='ls"+i+"' >"+playListIn[i].title+"</li>"
     }
     console.log(list);
     playListOut.innerHTML = list;
