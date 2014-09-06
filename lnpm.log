@@ -1,24 +1,20 @@
 lnpm started
-Wed Aug 27 14:07:20 PDT 2014
-[1734] paramcount1
-[1735] params= modparam=
+Fri Sep  5 21:14:23 PDT 2014
+[1734] paramcount3
+[1735] params=grunt modparam=--save-dev
 [1;34m[1730] Swtich Statement Begins 1=install[0m
-[252] check3() modparam=
-[1;34m[219] install() pkgin=[0m
-[1;34m[279] setpackage() pkgin=  [0m
-[1;34m[598] convert()  [0m
+[252] check3() modparam=--save-dev
+[1;34m[219] install() pkgin=grunt[0m
+[1;34m[279] setpackage() pkgin=grunt  [0m
+[1;34m[580] getPackageCount() pkgin=grunt  [0m
+[1;34m[260] splitdirnames()  [0m
+[290] pkgcount=1 pkgin=grunt found locally
+[1;34m[337] checkpackagejson()[0m
 [1;34m[483] parcepkgjson()[0m
 [1;34m[536] makeDepList() depobj[@]="dependencies": { "express": "4.8.5" }  [0m
 [1;34m[551] makeDevList()[0m
-[1;34m[741] setVersion() "express" "4.8.5" [0m
-[1;34m[724] setPackageCount()express  [0m
-[1;34m[260] splitdirnames()  [0m
-[1;34m[1240] exactVersion()express 4.8.5 [0m
-[1;34m[1697] isLocal() pkg=express ver=4.8.5 
-[1;34m[260] splitdirnames()  [0m
-[1239] loc=1
-[784] result=4.8.5 "4.8.5" 
-[1;34m[1697] isLocal() pkg=express ver=4.8.5 
-[1;34m[260] splitdirnames()  [0m
-[786] versionLocal1 "4.8.5" 
-[604] vrs=4.8.5
+[1;34m[348] checkpackageDep() pkgin="grunt" pkgVin="0.4.5" deplist[@]="express"[0m
+[1;34m[369] checkpackageDev() pkgin="grunt" [0m
+[1;34m[432] addpackageDev() pkgin=grunt[0m
+[439] havedevdependencies=false
+[1;34m[474] writepackagejson()[0m

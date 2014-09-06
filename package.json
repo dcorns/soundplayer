@@ -18,5 +18,8 @@
 "homepage": "https://github.com/dcorns/soundplayer",
 "dependencies": {
 "express": "4.8.5"
+},
+"devDependencies": {
+"grunt": "0.4.5"
 }
 }
