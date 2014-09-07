@@ -80,4 +80,3 @@ function makeplayer() {
 return player;
 }
 var player = makeplayer();
-
