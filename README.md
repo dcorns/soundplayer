@@ -24,3 +24,5 @@ HTML5
 CSS
 JavaScript
 
+Should end up being a player for pople to use with their own audio from anywhere.
+
