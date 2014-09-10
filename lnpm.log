@@ -1,20 +1,20 @@
 lnpm started
-Sun Sep  7 23:05:31 PDT 2014
+Wed Sep 10 02:10:18 PDT 2014
 [1734] paramcount3
-[1735] params=grunt-contrib-jshint modparam=--save-dev
+[1735] params=grunt-simple-mocha modparam=--save-dev
 [1;34m[1730] Swtich Statement Begins 1=install[0m
 [252] check3() modparam=--save-dev
-[1;34m[219] install() pkgin=grunt-contrib-jshint[0m
-[1;34m[279] setpackage() pkgin=grunt-contrib-jshint  [0m
-[1;34m[580] getPackageCount() pkgin=grunt-contrib-jshint  [0m
+[1;34m[219] install() pkgin=grunt-simple-mocha[0m
+[1;34m[279] setpackage() pkgin=grunt-simple-mocha  [0m
+[1;34m[580] getPackageCount() pkgin=grunt-simple-mocha  [0m
 [1;34m[260] splitdirnames()  [0m
-[290] pkgcount=1 pkgin=grunt-contrib-jshint found locally
+[290] pkgcount=1 pkgin=grunt-simple-mocha found locally
 [1;34m[337] checkpackagejson()[0m
 [1;34m[483] parcepkgjson()[0m
 [1;34m[536] makeDepList() depobj[@]="dependencies": { "express": "4.8.5" },  [0m
 [1;34m[551] makeDevList()[0m
-[1;34m[348] checkpackageDep() pkgin="grunt-contrib-jshint" pkgVin="0.10.0" deplist[@]="express"[0m
-[1;34m[369] checkpackageDev() pkgin="grunt-contrib-jshint" [0m
-[1;34m[432] addpackageDev() pkgin=grunt-contrib-jshint[0m
+[1;34m[348] checkpackageDep() pkgin="grunt-simple-mocha" pkgVin="0.4.0" deplist[@]="express"[0m
+[1;34m[369] checkpackageDev() pkgin="grunt-simple-mocha" [0m
+[1;34m[432] addpackageDev() pkgin=grunt-simple-mocha[0m
 [439] havedevdependencies=true
 [1;34m[474] writepackagejson()[0m

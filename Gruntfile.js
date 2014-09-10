@@ -6,9 +6,20 @@ module.exports = function(grunt) {
       options: {
         jshintrc: true
       }
+    },
+    casper : {
+      acceptance : {
+        options : {
+          test : true
+        },
+        files : {
+          'test/acceptance/casper-results.xml' : ['test/casperTests/*_test.js']
+        }
+      }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-casper');
 
-  grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('default', ['jshint', 'casper']);
 };
