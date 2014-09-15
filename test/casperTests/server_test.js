@@ -7,10 +7,10 @@ casper.test.begin('testing the server', 1, function suite(test) {
     test.assertHttpStatus(200);
   });
 
-  casper.then(function(){
+  /*casper.then(function(){
     this.log('and then?');
     this.echo(this.getHTML('body'));
-  });
+  });*/
 
   casper.run(function(){
     test.done();
