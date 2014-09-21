@@ -10,10 +10,12 @@ module.exports = function(grunt) {
     casper : {
       acceptance : {
         options : {
-          test : true
+          test : true,
+          verbose: false,
+          loglevel: 'debug'
         },
         files : {
-          'test/acceptance/casper-results.xml' : ['test/casperTests/*_test.js']
+          'test/acceptance/casper-results.xml' : ['test/browser/*-test.js']
         }
       }
     },
