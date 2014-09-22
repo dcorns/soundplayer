@@ -1,7 +1,7 @@
 'use strict';
 /*global casper*/
 casper.test.comment('Acceptance Test Begin');
-casper.test.begin('Testing the server', 16, function suite(test) {
+casper.test.begin('Testing the server', 17, function suite(test) {
   casper.start('http://localhost:8080/index.html', function() {
     test.assertHttpStatus(200,'Has 200 status');
     //Element Counts
@@ -23,8 +23,10 @@ casper.test.begin('Testing the server', 16, function suite(test) {
     test.assertExists('#player'+' #playBar'+' #lblDuration','playBar has duration label');
     test.assertExists('#player'+' #playBar'+' #lblElapsedTime','playBar has elapsed time label');
     test.assertExists('#player'+' #playList','player has playList');
+    test.assertEvalEqual(function(){
+      return __utils__.findOne('#pauseTrack').getAttribute('display');},'none','Pause button is not visible');
 
-    //has play/pause buttion
+
     //can play/pause
     //can forward to next track
     //can reverse to previous track
