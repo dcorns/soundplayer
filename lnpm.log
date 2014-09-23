@@ -1,19 +1,14 @@
 lnpm started
-Tue Sep 16 12:13:55 PDT 2014
+Mon Sep 22 13:56:35 PDT 2014
 [1734] paramcount2
-[1735] params=grunt-contrib-watch modparam=
-[1;34m[1730] Swtich Statement Begins 1=install[0m
-[252] check3() modparam=
-[1;34m[219] install() pkgin=grunt-contrib-watch[0m
-[1;34m[279] setpackage() pkgin=grunt-contrib-watch  [0m
-[1;34m[580] getPackageCount() pkgin=grunt-contrib-watch  [0m
+[1735] params=karma-mocha modparam=
+[1;34m[1730] Swtich Statement Begins 1=copy[0m
+[1;34m[1701] copypkg() 1=karma-mocha 2= [0m
+[1;34m[279] setpackage() pkgin=karma-mocha  [0m
+[1;34m[580] getPackageCount() pkgin=karma-mocha  [0m
 [1;34m[260] splitdirnames()  [0m
-[290] pkgcount=1 pkgin=grunt-contrib-watch found locally
-[1;34m[337] checkpackagejson()[0m
-[1;34m[483] parcepkgjson()[0m
-[1;34m[536] makeDepList() depobj[@]="dependencies": { "grunt-express-server": "0.4.19", "express": "4.8.5" },  [0m
-[1;34m[551] makeDevList()[0m
-[1;34m[348] checkpackageDep() pkgin="grunt-contrib-watch" pkgVin="0.6.1" deplist[@]="grunt-express-server" "express"[0m
-[1;34m[369] checkpackageDev() pkgin="grunt-contrib-watch" [0m
-[1;34m[390] addpackageDep() pkgin=grunt-contrib-watch[0m
-[1;34m[474] writepackagejson()[0m
+[290] pkgcount=1 pkgin=karma-mocha found locally
+[1702] Selected version=0.1.9 path="/data/Projects/node_modules/karma-mocha--0.1.9"
+[1708] sl for karma-mocha exists, deleting
+[1713] Deleted link, now copying local directory as karma-mocha
+[1715] pkgpath="/data/Projects/node_modules/karma-mocha--0.1.9" cwd=/data/Projects/soundplayer pkgin=karma-mocha pkgver= 0.1.9
