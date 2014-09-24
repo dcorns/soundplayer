@@ -33,11 +33,11 @@ function makeplayer() {
         case 'playTrack':
           ui.currentTrack.play();
           controls.playTrack.className = 'turnOff';
-          controls.pauseTrack.className = '';
+          controls.pauseTrack.className = 'clPauseTrack';
           break;
         case 'pauseTrack':
           ui.currentTrack.pause();
-          controls.playTrack.className = '';
+          controls.playTrack.className = 'clPlayTrack';
           controls.pauseTrack.className = 'turnOff';
           break;
         default:
