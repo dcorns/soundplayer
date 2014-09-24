@@ -59,7 +59,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('test', ['jshint','express:dev','casper']);
+  grunt.registerTask('test', ['jshint','express:test','casper']);
   grunt.registerTask('server', 'express:dev');
   grunt.registerTask('default', ['express:dev', 'watch']);
 };
