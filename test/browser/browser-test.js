@@ -1,7 +1,7 @@
 'use strict';
 /*global casper*/
 casper.test.comment('Acceptance Test Begin');
-casper.test.begin('Testing the server', 19, function suite(test) {
+casper.test.begin('Testing the server', 20, function suite(test) {
   casper.start('http://localhost:8080/index.html', function() {
     test.assertHttpStatus(200,'Has 200 status');
     //Element Counts
@@ -29,14 +29,14 @@ casper.test.begin('Testing the server', 19, function suite(test) {
     test.assertEvalEqual(function(){
       return document.getElementById('playTrack').getAttribute('class');
     },'clPlayTrack','playTrack starts with the clPlayTrack class');
+    test.assertVisible('#playTrack','The play button is visible');
+
     casper.then(function(){
       casper.click('#playTrack');
     });
     casper.then(function(){
       casper.capture('images/startpage.png');
-        test.assertEvalEqual(function(){
-          return document.getElementById('playTrack').getAttribute('class');
-        },'turnOff','playTrack gets turnOff class after when clicked');
+      test.assertVisible('#pauseTrack','The pause button is visible');
     });
 
 
