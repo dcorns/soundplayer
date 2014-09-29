@@ -34,6 +34,7 @@ function makeplayer() {
           ui.currentTrack.play();
           controls.playTrack.className = 'turnOff';
           controls.pauseTrack.className = 'clPauseTrack';
+          controls.pauseTrack.text = 'blue';
           break;
         case 'pauseTrack':
           ui.currentTrack.pause();
@@ -51,7 +52,6 @@ function makeplayer() {
     playing.npImg = document.getElementById('npImg');
 
     controls.pauseTrack.className = 'turnOff';
-
 
     //Make test playlist
     player.playlist.push({file:'api/music/Cracker Blues - Bolero maldito.mp3', graphic: 'api/graphics/16999373.jpg', title: 'Bolero maldito'});

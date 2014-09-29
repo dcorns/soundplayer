@@ -1,7 +1,7 @@
 'use strict';
 /*global casper*/
 casper.test.comment('Acceptance Test Begin');
-casper.test.begin('Testing the server', 20, function suite(test) {
+casper.test.begin('Testing the index page', 20, function suite(test) {
   casper.start('http://localhost:8080/index.html', function() {
     test.assertHttpStatus(200,'Has 200 status');
     //Element Counts
@@ -34,10 +34,14 @@ casper.test.begin('Testing the server', 20, function suite(test) {
     casper.then(function(){
       casper.click('#playTrack');
     });
+
     casper.then(function(){
-      casper.capture('images/startpage.png');
-      test.assertVisible('#pauseTrack','The pause button is visible');
+      test.assertSelectorHasText('#pauseButton', 'blue');
     });
+//    casper.waitForSelector('img#playTrack.turnOff',function(){
+//      test.assertVisible('#pauseTrack','The pause button is visible');
+//
+//    });
 
 
     //can play/pause
